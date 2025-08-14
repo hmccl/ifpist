@@ -91,7 +91,8 @@
 
   // Resumo e Abstract
   // Notas de rodapé para Resumo e Abstract
-  show footnote: set text(size: 10pt)
+  set footnote.entry(indent: 0em)
+  show footnote.entry: set text(size: 10pt)
   page([
     #align(center)[
       #if subtitulo != none [
@@ -101,9 +102,9 @@
       ]
     ]
     #align(right)[
-      #text(autor)#footnote(autor) \
-      #text(orientador)#footnote(orientador) \
-      #if coorientador != none [#text(coorientador)#footnote(coorientador)]
+      #text(autor) #footnote(autor) \
+      #text(orientador) #footnote(orientador) \
+      #if coorientador != none [#text(coorientador) #footnote(coorientador)]
     ]
     #align(center)[#text(weight: "bold")[#smallcaps("Resumo")]] \
     #text(resumo) \
@@ -170,15 +171,17 @@
   // Figures
   show figure: set figure.caption(position: top, separator: [ --- ])
   show figure.caption: set text(size: 12pt)
-  show footnote: set text(size: 10pt)
+  set footnote.entry(indent: 0em)
+  show footnote.entry: set text(size: 10pt)
   // Tabelas
   show table: set text(size: 10pt)
   // Equações
   set math.equation(numbering: "(1)")
   // Código fonte
+  set raw(theme: none)
   show raw: set text(size: 10pt)
   show raw.where(block: true): set par(leading: 0.5em, spacing: 0.55em)
-  show raw.where(block: true): block.with(stroke: luma(170), inset: 10pt)
+  show raw.where(block: true): block.with(stroke: 0.5pt + black, inset: 10pt)
 
   // Corpo
   body
