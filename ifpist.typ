@@ -7,7 +7,9 @@
   subtitulo: none,
   cidade: "",
   orientador: "",
+  orientador-pronome: "",
   coorientador: none,
+  coorientador-pronome: none,
   resumo: [],
   palavras: (),
   abstract: [],
@@ -75,11 +77,19 @@
           } \
           \
           #{
-            [Orientador: ] + orientador + [.]
+            if orientador-pronome == "M" [
+              #text([Orientador: ] + orientador + [.])
+            ] else if orientador-pronome == "F" [
+              #text([Orientadora: ] + orientador + [.])
+            ]
           } \
           #{
-            if coorientador != none [
-              #text([Coorientador: ] + coorientador + [.])
+            if coorientador != none and coorientador-pronome != none [
+              #if coorientador-pronome == "M" [
+                #text([Coorientador: ] + coorientador + [.])
+              ] else if coorientador-pronome == "M" [
+                #text([Coorientadora: ] + coorientador + [.])
+              ]
             ]
           } \
         ]
