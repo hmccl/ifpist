@@ -21,6 +21,7 @@
   set page(margin: (top: 3cm, bottom: 2cm, left: 3cm, right: 2cm))
   // Tamanho da fonte e idioma
   set text(
+    font: "STIX Two Text",
     size: 12pt,
     lang: "pt",
   )
@@ -177,9 +178,10 @@
   show table: set text(size: 10pt)
   // Equações
   set math.equation(numbering: "(1)")
+  show math.equation: set text(font: "STIX Two Math")
   // Código fonte
   set raw(theme: none)
-  show raw: set text(size: 10pt)
+  show raw: set text(font:"Inconsolata", size: 10pt)
   show raw.where(block: true): set par(leading: 0.5em, spacing: 0.55em)
   show raw.where(block: true): block.with(stroke: 0.5pt + black, inset: 10pt)
 
