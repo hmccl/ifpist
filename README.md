@@ -13,17 +13,17 @@ Veja o arquivo [exemplo](https://github.com/hmccl/ifpist/blob/main/main.pdf).
 | `curso` | [Análise e Desenvolvimento de Sistemas] | [content] | Curso. |
 | `cidade` | "Teresina" | [string] | Cidade. |
 | `autor` | "" | [string] | Nome do autor. |
-| `autor-pronome` | "" | [string] | Pronome do autor. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na nota de rodapé do autor. |
+| `autor-pronome` | "" | [string] | Pronome do autor. "M" ou "F" para masculino ou feminino, respectivamente. Escolhe o gênero na nota de rodapé do autor. |
 | `autor-email` | "" | [string] | E-mail do autor. |
 | `titulo` | [] | [content] | Título do artigo. |
 | `subtitulo` | none | [content] | Opcional. Subtítulo do artigo. |
 | `orientador` | "" | [string] | Nome do orientador. |
-| `orientador-pronome` | "" | [string] | Pronome do orientador. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
+| `orientador-pronome` | "" | [string] | Pronome do orientador. "M" ou "F" para masculino ou feminino, respectivamente. Escolhe o gênero na folha de rosto. |
 | `orientador-bio` | [] | [content] | Currículo sucinto do orientador. |
 | `orientador-instituto` | [Instituto Federal de Educação, Ciência e Tecnologia do Piauí] | [content] | Instituto do orientador. |
 | `orientador-email` | "" | [string] | E-mail do orientador. |
 | `coorientador` | none | [string] | Opcional. Nome do coorientador. Os dados do coorientador dependem dessa variável. |
-| `coorientador-pronome` | none | [string] | Pronome do coorientador. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
+| `coorientador-pronome` | none | [string] | Pronome do coorientador. "M" ou "F" para masculino ou feminino, respectivamente. Escolhe o gênero na folha de rosto. |
 | `coorientador-bio` | none | [content] | Currículo sucinto do coorientador. |
 | `coorientador-instituto` | [Instituto Federal de Educação, Ciência e Tecnologia do Piauí] | [content] | Instituto do coorientador. |
 | `coorientador-email` | none | [string] | E-mail do coorientador. |
@@ -49,18 +49,18 @@ Veja o arquivo [exemplo](https://github.com/hmccl/ifpist/blob/main/main.pdf).
 
 O template não segue todas as regras do manual.
 
-- O espaçamento entre as linhas é diferente do espaçamento do manual.
+- Espaçamento entre linhas.
 
-Espaçamento entre linhas é complexo. O manual faz referência ao
-espaçamento do Microsoft Word, no entanto a forma como o
-Typst faz o cáculo é diferente. Assim, foi feita uma aproximação.
+O manual faz referência ao espaçamento do Microsoft Word,
+no entanto a forma como o Typst faz o cáculo é diferente.
+Dessa forma, foi feita uma aproximação.
 
-- A fonte é diferente da fonte do manual.
+- Família de fontes.
 
-Times New Roman e Arial são as fontes permitidas pelo manual. Essa fonte não é livre.
+Times New Roman e Arial são as fontes permitidas pelo manual. Essas fontes não são livres.
 É possível utilizar fontes que se assemelham à fonte pedida.
-É possível substituir a fonte Times New Roman pela família de fontes STIX Two.
-É possível substituir a fonte Arial pela família de fontes TeX Gyre Heros.
+Para Times New Roman pode-se utilizar a família de fontes STIX Two.
+Para Arial pode-se utilizar a família de fontes TeX Gyre Heros.
 
 ## Referências
 
