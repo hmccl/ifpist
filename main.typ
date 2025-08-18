@@ -18,6 +18,7 @@
   palavras: ("surfe", "onda", "praia"),
   abstract: [#lorem(150)],
   keywords: ("surf", "wave", "beach"),
+  data: datetime(year: 2025, month: 10, day: 10),
 )
 
 = Introdução

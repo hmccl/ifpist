@@ -28,6 +28,8 @@
   palavras: (),
   abstract: [],
   keywords: (),
+  // Data de apresentação
+  data: datetime.today(),
   // Corpo do texto
   body,
 ) = {
@@ -155,7 +157,7 @@
       ]
     ] \
     \
-    #text(weight: "medium")[Data de aprovação: #datetime.today().display("[day]/[month]/[year]")] \
+    #text(weight: "medium")[Data de aprovação: #data.display("[day]/[month]/[year]")] \
   ])
 
   // Sumário
