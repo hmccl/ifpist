@@ -68,7 +68,10 @@
 
 #lorem(30)
 
-Lista:
+Alínea e subalínea #footnote[
+  Não são automáticas. É necessário usar `enum` para alínea e `list` para subalíneas.
+  Além disso, deve-se observar as regras de pontuação.
+]:
 
 + item 1;
 + item 2;
