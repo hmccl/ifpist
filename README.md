@@ -2,7 +2,7 @@
 
 Template em Typst para o modelo de artigo do IFPI.
 
-Veja o arquivo [exemplo.](https://github.com/hmccl/ifpist/blob/main/main.pdf)
+Veja o arquivo [exemplo](https://github.com/hmccl/ifpist/blob/main/main.pdf).
 
 ## Configuração
 
@@ -13,17 +13,17 @@ Veja o arquivo [exemplo.](https://github.com/hmccl/ifpist/blob/main/main.pdf)
 | `curso` | [Análise e Desenvolvimento de Sistemas] | [content] | Curso. |
 | `cidade` | "Teresina" | [string] | Cidade. |
 | `autor` | "" | [string] | Nome do autor. |
-| `autor-pronome` | "" | [string] | Pronome do autor. "M" ou "F", para masculino e feminino, respectivamente. Escolhe o gênero na nota de rodapé do autor. |
+| `autor-pronome` | "" | [string] | Pronome do autor. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na nota de rodapé do autor. |
 | `autor-email` | "" | [string] | E-mail do autor. |
 | `titulo` | [] | [content] | Título do artigo. |
 | `subtitulo` | none | [content] | Opcional. Subtítulo do artigo. |
 | `orientador` | "" | [string] | Nome do orientador. |
-| `orientador-pronome` | "" | [string] | Pronome do orientador. "M" ou "F", para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
+| `orientador-pronome` | "" | [string] | Pronome do orientador. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
 | `orientador-bio` | [] | [content] | Currículo sucinto do orientador. |
 | `orientador-instituto` | [Instituto Federal de Educação, Ciência e Tecnologia do Piauí] | [content] | Instituto do orientador. |
 | `orientador-email` | "" | [string] | E-mail do orientador. |
 | `coorientador` | none | [string] | Opcional. Nome do coorientador. Os dados do coorientador dependem dessa variável. |
-| `coorientador-pronome` | none | [string] | Pronome do coorientador. "M" ou "F", para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
+| `coorientador-pronome` | none | [string] | Pronome do coorientador. "M" ou "F" para masculino e feminino, respectivamente. Escolhe o gênero na folha de rosto. |
 | `coorientador-bio` | none | [content] | Currículo sucinto do coorientador. |
 | `coorientador-instituto` | [Instituto Federal de Educação, Ciência e Tecnologia do Piauí] | [content] | Instituto do coorientador. |
 | `coorientador-email` | none | [string] | E-mail do coorientador. |
