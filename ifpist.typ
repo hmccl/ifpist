@@ -3,13 +3,21 @@
   campus: [],
   curso: [],
   autor: "",
+  autor-pronome: "",
+  autor-email: "",
   titulo: [],
   subtitulo: none,
   cidade: "",
   orientador: "",
   orientador-pronome: "",
+  orientador-bio: [],
+  orientador-instituto: [],
+  orientador-email: "",
   coorientador: none,
   coorientador-pronome: none,
+  coorientador-bio: none,
+  coorientador-instituto: none,
+  coorientador-email: none,
   resumo: [],
   palavras: (),
   abstract: [],
@@ -84,7 +92,7 @@
             ]
           } \
           #{
-            if coorientador != none and coorientador-pronome != none [
+            if coorientador != none [
               #if coorientador-pronome == "M" [
                 #text([Coorientador: ] + coorientador + [.])
               ] else if coorientador-pronome == "M" [
@@ -112,10 +120,14 @@
         #text(weight: "bold")[#smallcaps(titulo)]
       ]
     ]
+    #let autor-bio = if autor-pronome == "M" [Graduando em ] else if autor-pronome == "F" [Graduanda em ]
+    #let autor-footnote = autor-bio + curso + [. ] + instituto + [. ] + link("mailto:" + autor-email)
+    #let orientador-footnote = orientador-bio + [ ] + orientador-instituto + [. ] + link("mailto:" + orientador-email)
+    #let coorientador-footnote = coorientador-bio + [ ] + coorientador-instituto + [. ] + link("mailto:" + coorientador-email)
     #align(right)[
-      #text(autor) #footnote(autor) \
-      #text(orientador) #footnote(orientador) \
-      #if coorientador != none [#text(coorientador) #footnote(coorientador)]
+      #text(autor) #footnote(autor-footnote) \
+      #text(orientador) #footnote(orientador-footnote) \
+      #if coorientador != none [#text(coorientador) #footnote(coorientador-footnote)]
     ]
     #align(center)[#text(weight: "bold")[#smallcaps("Resumo")]] \
     #text(resumo) \
