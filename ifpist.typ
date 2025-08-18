@@ -1,27 +1,34 @@
 #let ifpist(
-  instituto: [],
-  campus: [],
-  curso: [],
+  // Dados da instituição
+  instituto: [Instituto Federal de Educação, Ciência e Tecnologia do Piauí],
+  campus: [Campus Teresina Central],
+  curso: [Análise e Desenvolvimento de Sistemas],
+  cidade: "Teresina",
+  // Dados do autor
   autor: "",
   autor-pronome: "",
   autor-email: "",
+  // Título
   titulo: [],
   subtitulo: none,
-  cidade: "",
+  // Dados do orientador
   orientador: "",
   orientador-pronome: "",
   orientador-bio: [],
-  orientador-instituto: [],
+  orientador-instituto: [Instituto Federal de Educação, Ciência e Tecnologia do Piauí],
   orientador-email: "",
+  // Dados do coorientador (opcional)
   coorientador: none,
   coorientador-pronome: none,
   coorientador-bio: none,
-  coorientador-instituto: none,
+  coorientador-instituto: [Instituto Federal de Educação, Ciência e Tecnologia do Piauí],
   coorientador-email: none,
+  // Resumo e palavras-chave (pt e en)
   resumo: [],
   palavras: (),
   abstract: [],
   keywords: (),
+  // Corpo do texto
   body,
 ) = {
   // Regras gerais
