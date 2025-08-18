@@ -53,7 +53,7 @@ O template não segue todas as regras do manual.
 
 O manual faz referência ao espaçamento do Microsoft Word,
 no entanto a forma como o Typst faz o cáculo é diferente.
-Dessa forma, foi feita uma aproximação.
+Dessa forma, faz-se uma aproximação.
 
 - Família de fontes.
 
