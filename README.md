@@ -17,6 +17,7 @@ Veja o arquivo [exemplo](https://github.com/hmccl/ifpist/blob/main/main.pdf).
 | `autor-email` | "" | [string] | E-mail do autor. |
 | `titulo` | [] | [content] | Título do artigo. |
 | `subtitulo` | none | [content] | Opcional. Subtítulo do artigo. |
+| `tipo-trabalho` | "TCC" | [string] | Tipo do documento. "EP" ou "TCC" para Elaboração de Projeto ou Trabalho de Conclusão de Curso, respectivamente. Altera texto da folha de rosto. |
 | `orientador` | "" | [string] | Nome do orientador. |
 | `orientador-pronome` | "" | [string] | Pronome do orientador. "M" ou "F" para masculino ou feminino, respectivamente. Escolhe o gênero na folha de rosto. |
 | `orientador-bio` | [] | [content] | Currículo sucinto do orientador. |
@@ -33,34 +34,21 @@ Veja o arquivo [exemplo](https://github.com/hmccl/ifpist/blob/main/main.pdf).
 | `keywords` | () | [array] | Palavras-chave do artigo em inglês. |
 | `data` | datetime.today() | [datetime] | Data de apresentação do artigo. |
 
-
-## Dependências
-
-É necessário instalar as famílias de fontes `STIX Two Text`, `STIX Two Math` e `Inconsolata`.
-
-## TODO
-
-- [ ] Implementar referências (10pt e espaçamento simples).
-- [ ] Implementar fonte debaixo das figuras (10pt).
-- [ ] Implementar formatação de tabelas.
-- [ ] Implementar sumário (caso seja obrigatório).
-
 ## Observações
 
-O template não segue todas as regras do manual.
+**Não há garantia que o template siga todas as regras do manual.**
 
-- Espaçamento entre linhas.
-
-O manual faz referência ao espaçamento do Microsoft Word,
-no entanto a forma como o Typst faz o cáculo é diferente.
-Dessa forma, faz-se uma aproximação.
-
-- Família de fontes.
-
-Times New Roman e Arial são as fontes permitidas pelo manual. Essas fontes não são livres.
-É possível utilizar fontes que se assemelham à fonte pedida.
-Para Times New Roman pode-se utilizar a família de fontes STIX Two.
-Para Arial pode-se utilizar a família de fontes TeX Gyre Heros.
+- A família de fontes utilizada é a padrão do Typst
+- O espaçamento entre linhas foi aproximado
+- O espaçamento dos títulos de seção foi aproximado
+- A fonte para as figuras requer o uso de uma função auxiliar
+- A formatação de tabelas complexas requer ajuste manual
+- As regras das alíneas e subalíneas requerem ajuste manual
+- A formatação do sumário foi implementada, mas não foi utilizada
+- Elementos pós-textuais requerem o uso de uma função auxiliar
+- A formatação da parte pós-textual é básica, portanto ajustes para cada elemento são necessários
+- A escolha do tipo de trabalho altera a folha de rosto, no entanto outros ajustes são manuais, como a inclusão ou exclusão de elementos pré- e pós-textuais
+- Há uma função auxiliar para rascunhos no documento
 
 ## Referências
 
