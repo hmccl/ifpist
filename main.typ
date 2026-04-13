@@ -3,22 +3,23 @@
 #show: ifpist.with(
   autor: "Cadu Maverick",
   autor-pronome: "M",
-  autor-email: "cadumaverick@example.com",
+  autor-email: "cadumaverick@ifpi.edu.br",
   titulo: [Tá Dando Onda],
   subtitulo: [Surfe!],
+  tipo-trabalho: "TCC",
   orientador: "Big Z",
   orientador-pronome: "M",
   orientador-bio: [Lenda do surfe.],
-  orientador-email: "bigz@example.com",
+  orientador-email: "bigz@ifpi.edu.br",
   coorientador: "João Frango",
   coorientador-pronome: "M",
   coorientador-bio: [Filósofo do surfe.],
-  coorientador-email: "joao@example.com",
+  coorientador-email: "joao@ifpi.edu.br",
   resumo: [#lorem(150)],
   palavras: ("surfe", "onda", "praia"),
   abstract: [#lorem(150)],
   keywords: ("surf", "wave", "beach"),
-  data: datetime(year: 2025, month: 10, day: 10),
+  data: datetime(year: 2026, month: 06, day: 30),
 )
 
 = Introdução
@@ -34,6 +35,12 @@
 #quote(attribution: [Platão])[#lorem(30)]
 
 #lorem(45)
+
+Wikipedia, a enciclopédia livre que todos podem editar. @web:wikipedia
+
+#rascunho[
+  Adicionar história do surfe.
+]
 
 = Desenvolvimento
 
@@ -52,22 +59,23 @@
 #lorem(20)
 
 #figure(
-  table(
-    columns: 2,
-    align: horizon,
-    table.header(
-      [Estado], [Capital],
-    ),
-    [Maranhão], [São Luís],
-    [Piauí], [Teresina],
-    [Ceará], [Fortaleza],
-    [Rio Grande do Norte], [Natal],
-    [Paraíba], [João Pessoa],
-    [Pernambuco], [Recife],
-    [Alagoas], [Maceió],
-    [Sergipe], [Aracaju],
-    [Salvador], [Bahia],
-  ),
+  [
+    #table(
+      columns: 2,
+      table.header([Estado], [Capital]),
+      [Maranhão], [São Luís],
+      [Piauí], [Teresina],
+      [Ceará], [Fortaleza],
+      [Rio Grande do Norte], [Natal],
+      [Paraíba], [João Pessoa],
+      [Pernambuco], [Recife],
+      [Alagoas], [Maceió],
+      [Sergipe], [Aracaju],
+      [Salvador], [Bahia],
+      table.hline(),
+    )
+    #fonte[Brasil.]
+  ],
   caption: [Capitais do Nordeste],
 )
 
@@ -79,10 +87,11 @@ Alínea e subalínea #footnote[
 ]:
 
 + item 1;
-+ item 2;
++ #lorem(20);
 + item 3.
   - subitem 1;
-  - subitem 2.
+  - #lorem(20);
+  - subitem 3.
 
 === Ferramentas
 
@@ -101,20 +110,30 @@ $ phi.alt := (1 + sqrt(5)) / 2 $
 #lorem(30)
 
 #figure(
-  image("ifpi-logo-horizontal.png", width: 50%),
+  [
+    #image("img/ifpi-logo-horizontal.png", width: 50%)
+    #fonte[IFPI.]
+  ],
   caption: [IFPI],
 )
 
 #lorem(20)
 
-#figure(
-```zig
-const std = @import("std");
+=== #lorem(20)
 
-pub fn main() void {
-    std.debug.print("Hello world!\n", .{});
-}
-```,
+#lorem(100)
+
+#figure(
+  [
+    ```zig
+    const std = @import("std");
+
+    pub fn main() void {
+        std.debug.print("Hello world!\n", .{});
+    }
+    ```
+    #fonte[ZIG.]
+  ],
   caption: [Hello World, ZIG],
 )
 
@@ -125,3 +144,11 @@ pub fn main() void {
 #lorem(200)
 
 #lorem(180)
+
+#bibliography("refs.bib")
+
+#pos-textual[
+  = Agradecimentos
+
+  Obrigado!
+]
